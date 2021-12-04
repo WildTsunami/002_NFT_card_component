@@ -5,10 +5,107 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    color:white;
+}
+
+html{
+        font-family: 'Outfit', serif, sans-serif;
+        font-size: 18px;
+        background-color: hsl(217, 54%, 11%);
 }
 
 body{
-    font-family: 'Outfit', serif, sans-serif;
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
 }
 
+a{
+    text-decoration: none;
+}
+
+
+/* Main card bloc */
+#card{
+    width: 350px;
+    padding: 20px;
+    border: transparent;
+    margin-bottom: 10px;
+    
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+#equilibrium_img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Middle text part */
+#card h2{
+    margin: 15px 0px;
+    
+    font-size: 1.2rem;
+}
+#card h2:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+#card>p{
+    margin-bottom: 20px;
+
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+/* Ethereum & clock part */
+
+.data{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.ether{
+    color:hsl(178, 100%, 50%);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.clock{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+/* Bottom part */
+
+.line{
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 15px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 35px;
+    border: 1px solid white;
+    margin-right: 20px;
+
+    border-radius: 90px;
+}
+
+.author>p{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.9rem;  
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);    
+}
