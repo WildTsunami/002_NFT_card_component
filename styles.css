@@ -38,14 +38,32 @@ a{
     border-radius: 15px;
 }
 
+/* Main image */
+/* First I create a div with the image in bg ; then I create an element covering the image with the right color and eye image and make it invisible ;
+finally I make it visible when hovered  */
+
 #equilibrium_img{
-    border-radius: 10px;
-    width: 100%;
+    height: 310px;
+    width: 310px;
+    background: url(images/image-equilibrium.jpg) no-repeat center;
+    background-size: contain;
+}
+#equilibrium_img::before{
+    content:'';
+    display: block;
+    opacity: 0;
+
+    height: 100%;
+    background: url(images/icon-view.svg) turquoise no-repeat center;
+}
+#equilibrium_img:hover::before{
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 /* Middle text part */
 #card h2{
-    margin: 15px 0px;
+    margin: 20px 0px 15px;
     
     font-size: 1.2rem;
 }
